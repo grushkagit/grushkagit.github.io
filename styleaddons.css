@@ -130,3 +130,7 @@ div#rec733440613 {
 div#rec733440614 {
     display: none;
 }
+
+.inviztext {
+    opacity: 0;
+}
