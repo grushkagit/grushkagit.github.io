@@ -427,3 +427,7 @@ main {
 .container-11 .yandex-map {
   border-radius: 30px;
 }
+
+.amoforms_iframe {
+  max-width: 100% !important;
+}
