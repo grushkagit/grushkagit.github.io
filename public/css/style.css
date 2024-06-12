@@ -389,4 +389,37 @@ main {
 .container-11 {
   background-color: var(--color-lightgrey);
   color: var(--color-blue);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  padding: 0 150px;
+  align-items: center;
+}
+.container-11 .block {
+  width: 600px;
+  line-height: 2;
+}
+.container-11 .title {
+  font-size: xx-large;
+}
+.container-11 .description {
+  padding-bottom: 20px;
+}
+.container-11 .text,
+.container-11 .moscow span,
+.container-11 .piter span {
+  font-weight: bold;
+}
+.container-11 ul {
+  flex-wrap: wrap;
+  list-style: disc;
+}
+.container-11 li {
+  margin-left: 15px;
+}
+.container-11 .address {
+  padding-bottom: 20px;
+}
+.container-11 .phone {
+  padding-bottom: 20px;
 }
