@@ -44,6 +44,12 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  .navigation {
+    justify-content: center;
+    height: 50px;
+  }
+}
 .menu {
   margin-left: 100px;
   gap: 20px;
@@ -51,6 +57,11 @@ p {
 @media (max-width: 1150px) {
   .menu {
     margin-left: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .menu {
+    margin-left: 0;
   }
 }
 .contacts {
@@ -61,12 +72,22 @@ p {
     margin-right: 20px;
   }
 }
+@media (max-width: 1100px) {
+  .contacts {
+    display: none;
+  }
+}
 .contacts .section .text span {
   font-weight: bold;
 }
 
 main {
   margin-top: 100px;
+}
+@media (max-width: 1100px) {
+  main {
+    margin-top: 50px;
+  }
 }
 .container {
   position: relative;
@@ -82,6 +103,12 @@ main {
   position: absolute;
   left: 100px;
   top: 100px;
+}
+@media (max-width: 1100px) {
+  .container-1 .block {
+    z-index: 2;
+    left: 20px;
+  }
 }
 .container-1 .title {
   font-size: xx-large;
@@ -106,6 +133,12 @@ main {
   right: -200px;
   z-index: 1;
 }
+@media (max-width: 1100px) {
+  .container-1 .girl-1 {
+    right: -600px;
+    top: -57px;
+  }
+}
 .container-1 button {
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -123,6 +156,11 @@ main {
   position: absolute;
   right: 0;
   top: 250px;
+}
+@media (max-width: 1100px) {
+  .container-1 .circle {
+    right: -550px;
+  }
 }
 .container-1 .circle .circle-1 {
   width: 517px;
@@ -167,12 +205,18 @@ main {
 }
 .container-2 .text {
   font-size: xx-large;
+  text-align: center;
 }
 .container-2 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   padding: 50px 150px;
+}
+@media (max-width: 1100px) {
+  .container-2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .container-2 .card {
   display: flex;
@@ -197,6 +241,12 @@ main {
   padding: 150px;
   gap: 50px;
 }
+@media (max-width: 1100px) {
+  .container-3 {
+    flex-wrap: wrap-reverse;
+    padding: 30px;
+  }
+}
 .container-3 img {
   width: 460px;
   height: 460px;
@@ -204,8 +254,19 @@ main {
   object-fit: cover;
   object-position: -66px;
 }
+@media (max-width: 1100px) {
+  .container-3 img {
+    width: 100%;
+    height: 375px;
+  }
+}
 .container-3 .text {
   font-size: large;
+}
+@media (max-width: 1100px) {
+  .container-3 .text {
+    text-align: center;
+  }
 }
 .container-3 .description-1 span,
 .container-3 .description-2 span {
@@ -218,17 +279,26 @@ main {
   line-height: 2;
 }
 
-.container-4 {
-}
-
 .container-5 {
   background-color: var(--color-white);
   color: var(--color-blue);
   height: 800px;
 }
+@media (max-width: 1100px) {
+  .container-5 {
+    height: 870px;
+  }
+}
 .container-5 .block {
   position: absolute;
   right: 150px;
+}
+@media (max-width: 1100px) {
+  .container-5 .block {
+    right: 90px;
+    padding-left: 20px;
+    z-index: 2;
+  }
 }
 .container-5 .title {
   font-size: xx-large;
@@ -255,6 +325,14 @@ main {
   width: 665px;
   z-index: 1;
 }
+@media (max-width: 1100px) {
+  .container-5 .girl-1 {
+    right: -295px;
+    position: absolute;
+    width: 500px;
+    top: 160px;
+  }
+}
 .container-5 .circle {
   filter: blur(8px);
   border-radius: 3000px;
@@ -265,6 +343,12 @@ main {
   top: -350px;
   left: -270px;
   opacity: 0.2;
+}
+@media (max-width: 1100px) {
+  .container-5 .circle {
+    top: 0;
+    left: -550px;
+  }
 }
 .container-5 .circle .circle-1 {
   width: 517px;
@@ -308,9 +392,6 @@ main {
   padding: 20px;
 }
 
-.container-7 {
-}
-
 .container-8 {
   background-color: var(--color-white);
   color: var(--color-blue);
@@ -328,6 +409,12 @@ main {
 .container-8 .photo {
   height: 350px;
   padding: 0 150px;
+}
+@media (max-width: 1100px) {
+  .container-8 .photo {
+    height: 200px;
+    padding: 0;
+  }
 }
 
 .container-9 {
@@ -348,6 +435,12 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   padding: 50px 150px;
+}
+@media (max-width: 1100px) {
+  .container-9 .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
 }
 .container-9 .card {
   display: flex;
@@ -385,6 +478,12 @@ main {
   gap: 50px;
   padding: 50px 150px;
 }
+@media (max-width: 1100px) {
+  .container-10 .grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
+}
 .container-10 .card {
   display: flex;
   flex-wrap: nowrap;
@@ -405,6 +504,12 @@ main {
   gap: 50px;
   padding: 50px 150px;
   align-items: center;
+}
+@media (max-width: 1100px) {
+  .container-11 {
+    flex-wrap: wrap;
+    padding: 50px;
+  }
 }
 .container-11 .block {
   width: 600px;
