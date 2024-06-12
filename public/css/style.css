@@ -11,6 +11,7 @@ body,
 html {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--color-white);
