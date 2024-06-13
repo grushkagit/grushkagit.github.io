@@ -370,9 +370,9 @@
       <div id="contacts" class="container container-11">
         <h2 class="title">КОНТАКТЫ</h2>
         <div class="tabmenu">
-            <button onclick="showTab('moscow')" class="active">Москва</button>
-            <button onclick="showTab('piter')">Санкт Петербург</button>
-            <button onclick="showTab('ekaterinburg')">Екатеринбург</button>
+            <button onclick="showTab('moscow', this)" class="active">Москва</button>
+            <button onclick="showTab('piter', this)">Санкт Петербург</button>
+            <button onclick="showTab('ekaterinburg', this)">Екатеринбург</button>
         </div>
         <div id="moscow" class="tabcontent">
             <div class="block">
@@ -457,7 +457,10 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        showTab('moscow', document.querySelector('.tabmenu button.active'));
+        const activeButton = document.querySelector('.tabmenu button.active');
+        if (activeButton) {
+            showTab('moscow', activeButton);
+        }
     });
     </script>
     
