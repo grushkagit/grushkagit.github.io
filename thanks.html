@@ -63,52 +63,18 @@
         /></div
     ></noscript>
     <!-- /Yandex.Metrika counter -->
-
     <!-- Assets -->
     <link rel="stylesheet" href="./public/css/thanks.css" />
     <script src="./src/js/jquery-3.7.1.min.js"></script>
-    <!-- Marquiz script start -->
-    <script>
-      (function (w, d, s, o) {
-        var j = d.createElement(s);
-        j.async = true;
-        j.src = "//script.marquiz.ru/v2.js";
-        j.onload = function () {
-          if (document.readyState !== "loading") Marquiz.init(o);
-          else
-            document.addEventListener("DOMContentLoaded", function () {
-              Marquiz.init(o);
-            });
-        };
-        d.head.insertBefore(j, d.head.firstElementChild);
-      })(window, document, "script", {
-        host: "//quiz.marquiz.ru",
-        region: "eu",
-        id: "65f7fdc467dea10026f89e43",
-        autoOpen: false,
-        autoOpenFreq: "once",
-        openOnExit: false,
-        disableOnMobile: false,
-      });
-    </script>
-    <!-- Marquiz script end -->
   </head>
   <body>
+    <div class="container">
+      <h2 class="title">Спасибо!</h2>
+      <h3 class="description">
+        Ваша заявка принята, мы скоро с вами свяжемся.
+      </h3>
+    </div>
     <script src="https://cdn.abros.dev/noti/noti.js"></script>
     <script src="https://cdn.abros.dev/copyright.js"></script>
-    <script>
-      (function (t, p) {
-        window.Marquiz
-          ? Marquiz.add([t, p])
-          : document.addEventListener("marquizLoaded", function () {
-              Marquiz.add([t, p]);
-            });
-      })("Widget", {
-        id: "65f7fdc467dea10026f89e43",
-        position: "left",
-        delay: 7,
-        autoOpen: 10,
-      });
-    </script>
   </body>
 </html>
