@@ -353,10 +353,13 @@
         acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
+            var plusIcon = this.querySelector(".plus-icon");
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
+                plusIcon.style.transform = 'rotate(0deg)';
             } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
+                plusIcon.style.transform = 'rotate(45deg)';
             }
         });
     }
