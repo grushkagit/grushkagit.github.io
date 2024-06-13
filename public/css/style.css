@@ -469,6 +469,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   padding: 100px 0;
+  width: 100%;
 }
 .container-10 .title {
   width: 700px;
@@ -491,10 +492,9 @@ main {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  border-bottom: 1px solid #213b72;
 }
 .container-10 .accordion {
-  background-color: var(--color-blue);
-  color: var(--color-white);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -504,9 +504,6 @@ main {
   transition: 0.4s;
   font-weight: bold;
   margin-bottom: 10px;
-}
-.container-10 .accordion:hover {
-  background-color: var(--color-light-blue);
 }
 .container-10 .panel {
   padding: 0 18px;
