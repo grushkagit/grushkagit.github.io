@@ -239,7 +239,7 @@ main {
   color: var(--color-blue);
   display: flex;
   flex-wrap: nowrap;
-  padding: 150px;
+  padding: 50px 150px;
   gap: 50px;
 }
 @media (max-width: 1100px) {
@@ -317,10 +317,10 @@ main {
 }
 .container-5 ul .text {
   font-weight: bold;
-  padding: 30px 40px 10px;
+  padding: 30px 60px 10px;
 }
 .container-5 ul .description {
-  padding-left: 40px;
+  padding-left: 60px;
 }
 .container-5 .girl-1 {
   width: 665px;
@@ -386,7 +386,12 @@ main {
 }
 
 .container-6 #gallery {
-  padding: 100px 0;
+  padding: 50px 0;
+}
+@media (max-width: 1100px) {
+  .container-6 #gallery {
+    padding: 0;
+  }
 }
 .container-6 .photo {
   height: 400px;
@@ -408,6 +413,11 @@ main {
   padding-bottom: 100px;
   width: 100%;
 }
+@media (max-width: 1100px) {
+  .container-8 #reviewss {
+    padding-bottom: 0;
+  }
+}
 .container-8 .photo {
   height: 350px;
   padding: 0 150px;
@@ -426,7 +436,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .container-9 .title {
   width: 700px;
@@ -468,7 +478,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 100px 0;
+  padding: 50px 0;
   width: 100%;
 }
 .container-10 .title {
