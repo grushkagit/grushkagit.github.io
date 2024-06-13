@@ -391,6 +391,7 @@ main {
 .container-6 .photo {
   height: 400px;
   padding: 20px;
+  object-fit: contain;
 }
 
 .container-8 {
@@ -410,6 +411,7 @@ main {
 .container-8 .photo {
   height: 350px;
   padding: 0 150px;
+  object-fit: contain;
 }
 @media (max-width: 1100px) {
   .container-8 .photo {
@@ -488,12 +490,33 @@ main {
 .container-10 .card {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
 }
-.container-10 .text {
+.container-10 .accordion {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
-.container-10 .description {
+.container-10 .accordion:hover {
+  background-color: var(--color-light-blue);
+}
+.container-10 .panel {
+  padding: 0 18px;
+  background-color: var(--color-white);
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.container-10 .panel .description {
+  margin-top: 10px;
   line-height: 2;
 }
 
