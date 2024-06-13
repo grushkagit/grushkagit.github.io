@@ -590,6 +590,9 @@ main {
 .container-11 .tabmenu button.active {
   opacity: 1;
 }
+.container-11 .tabcontent {
+  flex-wrap: nowrap;
+}
 .container-11 .block {
   width: 600px;
   line-height: 2;
