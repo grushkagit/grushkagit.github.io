@@ -513,7 +513,6 @@ main {
 .container-10 .panel {
   padding: 0 18px;
   background-color: var(--color-white);
-  display: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
