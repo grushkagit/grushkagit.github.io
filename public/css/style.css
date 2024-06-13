@@ -592,6 +592,7 @@ main {
 }
 .container-11 .tabcontent {
   flex-wrap: nowrap;
+  width: 100%;
 }
 .container-11 .block {
   width: 600px;
