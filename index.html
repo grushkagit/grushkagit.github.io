@@ -367,78 +367,93 @@
 
           </script>
       </div>
-      
       <div id="contacts" class="container container-11">
         <h2 class="title">КОНТАКТЫ</h2>
         <div class="tabmenu">
-          <button>Москва</button>
-          <button>Санкт Петербург</button>
-          <button>Екатеринбург</button>
+            <button onclick="showTab('moscow')">Москва</button>
+            <button onclick="showTab('piter')">Санкт Петербург</button>
+            <button onclick="showTab('ekaterinburg')">Екатеринбург</button>
         </div>
-        <div id="moscow">
-        <div class="block">
-          <p class="description">В одном месте мы собрали лучших специалистов в сфере косметологии, чтобы удовлетворять потребности в красоте и преображении самых требовательных гостей.</p>
-          <div class="address">
-          <p class="text">Адреса:</p>
-          <ul>
-            <li><p class="city"><span>Москва</span>, ул. Тестовская, дом 10, м. Тестовская</p></li>
-          </ul>
-          </div>
-          <div class="phone">
-          <p class="text">Телефон:</p>
-          <p class="num">+7 (969) 050-99-44</p>
-          </div>
-          <div class="time">
-            <p class="text">Время работы:</p>
-            <p class="num">с 10:00 — 22:00</p>
-            <p class="set">без выходных</p>
+        <div id="moscow" class="tabcontent">
+            <div class="block">
+                <p class="description">В одном месте мы собрали лучших специалистов в сфере косметологии, чтобы удовлетворять потребности в красоте и преображении самых требовательных гостей.</p>
+                <div class="address">
+                    <p class="text">Адреса:</p>
+                    <ul>
+                        <li><p class="city"><span>Москва</span>, ул. Тестовская, дом 10, м. Тестовская</p></li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    <p class="text">Телефон:</p>
+                    <p class="num">+7 (969) 050-99-44</p>
+                </div>
+                <div class="time">
+                    <p class="text">Время работы:</p>
+                    <p class="num">с 10:00 — 22:00</p>
+                    <p class="set">без выходных</p>
+                </div>
             </div>
+            <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0666f90a9eaf9e689b1286e7889f175f7418a6361695430fb4443fc084bcc69&amp;source=constructor" width="100%" height="620" frameborder="0"></iframe>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0666f90a9eaf9e689b1286e7889f175f7418a6361695430fb4443fc084bcc69&amp;source=constructor" width="100%" height="620" frameborder="0"></iframe>
-        </div>
-      <div id="piter">
-      <div class="block">
-        <p class="description">В одном месте мы собрали лучших специалистов в сфере косметологии, чтобы удовлетворять потребности в красоте и преображении самых требовательных гостей.</p>
-        <div class="address">
-        <p class="text">Адреса:</p>
-        <ul>
-          <li><p class="city"><span>Санкт-Петербург</span>, Большой Сампсониевский проспект 19, м. Выборгская</p></li>
-        </ul>
-        </div>
-        <div class="phone">
-        <p class="text">Телефон:</p>
-        <p class="num">+7 (909) 585-03-03</p>
-        </div>
-        <div class="time">
-          <p class="text">Время работы:</p>
-          <p class="num">с 10:00 — 22:00</p>
-          <p class="set">без выходных</p>
-          </div>
-      </div>
-      <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0666f90a9eaf9e689b1286e7889f175f7418a6361695430fb4443fc084bcc69&amp;source=constructor" width="100%" height="620" frameborder="0"></iframe>
-      </div>
-      <div id="ekaterinburg">
-        <div class="block">
-          <p class="description">В одном месте мы собрали лучших специалистов в сфере косметологии, чтобы удовлетворять потребности в красоте и преображении самых требовательных гостей.</p>
-          <div class="address">
-          <p class="text">Адреса:</p>
-          <ul>
-            <li><p class="city"><span>Екатеринбург</span>, ул. Белинского 32</p></li>
-          </ul>
-          </div>
-          <div class="phone">
-          <p class="text">Телефон:</p>
-          <p class="num">+7 (952) 727-55-40</p>
-          </div>
-          <div class="time">
-            <p class="text">Время работы:</p>
-            <p class="num">с 10:00 — 22:00</p>
-            <p class="set">без выходных</p>
+        <div id="piter" class="tabcontent" style="display:none;">
+            <div class="block">
+                <p class="description">В одном месте мы собрали лучших специалистов в сфере косметологии, чтобы удовлетворять потребности в красоте и преображении самых требовательных гостей.</p>
+                <div class="address">
+                    <p class="text">Адреса:</p>
+                    <ul>
+                        <li><p class="city"><span>Санкт-Петербург</span>, Большой Сампсониевский проспект 19, м. Выборгская</p></li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    <p class="text">Телефон:</p>
+                    <p class="num">+7 (909) 585-03-03</p>
+                </div>
+                <div class="time">
+                    <p class="text">Время работы:</p>
+                    <p class="num">с 10:00 — 22:00</p>
+                    <p class="set">без выходных</p>
+                </div>
             </div>
+            <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A858b43c775f109baa9f9a9c2c5eb91417df3a9ade14d69bd73ba1c562e1d6e97&amp;source=constructor" width="100%" height="620" frameborder="0"></iframe>
         </div>
-        <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0666f90a9eaf9e689b1286e7889f175f7418a6361695430fb4443fc084bcc69&amp;source=constructor" width="100%" height="620" frameborder="0"></iframe>
+        <div id="ekaterinburg" class="tabcontent" style="display:none;">
+            <div class="block">
+                <p class="description">В одном месте мы собрали лучших специалистов в сфере косметологии, чтобы удовлетворять потребности в красоте и преображении самых требовательных гостей.</p>
+                <div class="address">
+                    <p class="text">Адреса:</p>
+                    <ul>
+                        <li><p class="city"><span>Екатеринбург</span>, ул. Белинского 32</p></li>
+                    </ul>
+                </div>
+                <div class="phone">
+                    <p class="text">Телефон:</p>
+                    <p class="num">+7 (952) 727-55-40</p>
+                </div>
+                <div class="time">
+                    <p class="text">Время работы:</p>
+                    <p class="num">с 10:00 — 22:00</p>
+                    <p class="set">без выходных</p>
+                </div>
+            </div>
+            <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3320ff273f887ec145c79b69b626df4935a7027ed53b4536062e704818074f92&amp;source=constructor" width="100%" height="620" frameborder="0"></iframe>
         </div>
     </div>
+    
+    <script>
+        function showTab(tabId) {
+  const tabContents = document.querySelectorAll('.tabcontent');
+  tabContents.forEach(tabContent => {
+    tabContent.style.display = 'none';
+  });
+  document.getElementById(tabId).style.display = 'block';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  showTab('moscow');
+});
+
+    </script>
+    
     </main>
     <script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Widget', {id: '65f7fdc467dea10026f89e43', position: 'left', delay: 7, autoOpen: 10})</script>
 
