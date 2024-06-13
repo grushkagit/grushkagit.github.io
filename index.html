@@ -370,7 +370,7 @@
       <div id="contacts" class="container container-11">
         <h2 class="title">КОНТАКТЫ</h2>
         <div class="tabmenu">
-            <button onclick="showTab('moscow')">Москва</button>
+            <button onclick="showTab('moscow')" class="active">Москва</button>
             <button onclick="showTab('piter')">Санкт Петербург</button>
             <button onclick="showTab('ekaterinburg')">Екатеринбург</button>
         </div>
@@ -440,18 +440,25 @@
     </div>
     
     <script>
-        function showTab(tabId) {
-  const tabContents = document.querySelectorAll('.tabcontent');
-  tabContents.forEach(tabContent => {
-    tabContent.style.display = 'none';
-  });
-  document.getElementById(tabId).style.display = 'block';
-}
+        function showTab(tabId, element) {
+        const tabContents = document.querySelectorAll('.tabcontent');
+        const tabButtons = document.querySelectorAll('.tabmenu button');
 
-document.addEventListener('DOMContentLoaded', () => {
-  showTab('moscow');
-});
+        tabContents.forEach(tabContent => {
+            tabContent.style.display = 'none';
+        });
 
+        tabButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+
+        document.getElementById(tabId).style.display = 'block';
+        element.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showTab('moscow', document.querySelector('.tabmenu button.active'));
+    });
     </script>
     
     </main>
