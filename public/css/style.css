@@ -493,6 +493,7 @@ main {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  border-top: 1px solid #213b72;
   border-bottom: 1px solid #213b72;
 }
 .container-10 .accordion {
