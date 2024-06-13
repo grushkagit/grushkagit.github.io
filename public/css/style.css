@@ -496,6 +496,7 @@ main {
 }
 .container-10 .accordion {
   background-color: var(--color-white);
+  color: var(--color-blue);
   cursor: pointer;
   padding: 18px;
   width: 100%;
