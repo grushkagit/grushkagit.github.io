@@ -22,4 +22,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-family: "TildaSans", Arial, sans-serif;
+  width: 800px;
+}
+.title {
+  font-size: xxx-large;
+}
+.description {
+  font-size: xx-large;
+}
+.description {
+  font-size: xx-large;
+  text-align: center;
 }
